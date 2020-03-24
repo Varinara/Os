@@ -1,0 +1,13 @@
+task1.bat:
+
+driverquery /FO table /NH > c:\Lab6\task4\DRIVERS.txt
+
+
+
+
+task2.bat:
+
+sort /R C:\Lab6\task4\DRIVERS.txt > C:\Lab6\task4\SORTED.txt
+
+
+

@@ -1,0 +1,39 @@
+task1.bat:
+
+echo %computername%
+
+
+
+
+task2.bat:
+
+xcopy /Z C:\Lab6\task2\myFile.txt \\%computername%\temp\myFile.txt
+
+
+
+task3.bat:
+
+schtasks /create /SC MINUTE /TN "CopyTask" /TR "C:\LAB6\task2\task2.bat"
+
+
+
+
+
+
+task4.bat:
+
+taskkill /F /IM cmd.exe /T
+
+
+
+
+
+task5.bat
+
+FC /B C:\Lab6\task2\myFile.txt \\%computername%\temp\myFile.txt
+
+
+
+task6.bat
+
+xcopy /Z C:\Lab6\task2\myFile.txt \\%computername%\temp\myFile.txt
